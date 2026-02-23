@@ -3,6 +3,13 @@
 const LE_BOT_USERNAME = 'learning-equality-bot[bot]';
 const SENTRY_BOT_USERNAME = 'sentry-io[bot]';
 const DEPENDABOT_USERNAME = 'dependabot[bot]';
+const RTIBBLESBOT_USERNAME = 'rtibblesbot';
+const BOT_USERNAMES = [
+  LE_BOT_USERNAME,
+  SENTRY_BOT_USERNAME,
+  DEPENDABOT_USERNAME,
+  RTIBBLESBOT_USERNAME,
+];
 
 // close contributors are treated a bit special in some workflows,
 // for example, we receive a high priority notification about their
@@ -103,8 +110,7 @@ const COMMUNITY_REPOS = [...PR_STATS_REPOS];
 
 module.exports = {
   LE_BOT_USERNAME,
-  SENTRY_BOT_USERNAME,
-  DEPENDABOT_USERNAME,
+  BOT_USERNAMES,
   CLOSE_CONTRIBUTORS,
   KEYWORDS_DETECT_ASSIGNMENT_REQUEST,
   ISSUE_LABEL_HELP_WANTED,
